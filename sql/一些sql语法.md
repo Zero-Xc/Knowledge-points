@@ -1,26 +1,29 @@
                                              --表注释
-         case                                --case 
-         when F.CODE is null then            --when .. then 
-          d.code                                         
-         else                                --else 
-          f.code
-         end as 子件料号,                      --end
+case				--case 
+	when F.CODE is null 
+		then  d.code	--when .. then                                     
+	else			--else 
+		f.code
+	end as 子件料号  	     --end
 		 
 	                                  
                                     
-       cast(g.price as decimal(24,9)) as 厂商平均价1,  --CAST (expression AS data_type)
-       cast(h.price as nvarchar(50))  as 厂商平均价2,  --将expression转型为data_type(data_type可以是任意类型，比如nvarchar)
-       decimal(24,9)      --精度与小数位数分别为24与9。精度是总的数字位数，包括小数点左边和右边位数的总和。                   
-       --这表示本例能够支持的最大的整数值是999999999999999 （15位），而最小的小数值是0.000000001（9位）
+cast(g.price as decimal(24,9)) as 厂商平均价1,  
+--CAST (expression AS data_type)
+cast(h.price as nvarchar(50))  as 厂商平均价2,  
+--将expression转型为data_type(data_type可以是任意类型，比如nvarchar)
+decimal(24,9)      
+--精度与小数位数分别为24与9。精度是总的数字位数，包括小数点左边和右边位数的总和。                   
+--这表示本例能够支持的最大的整数值是999999999999999 （15位），而最小的小数值是0.000000001（9位）
 													
                           
                           
-		cast(case   --cast里面嵌套了case ..end (作为一个sql表达式)                              
-			  when d11.DescFlexField_PrivateDescSeg4='' 
-			   then 0.00                                     
-			  else  
-			   d11.DescFlexField_PrivateDescSeg4 
-			  end as decimal(24,9)) as 损耗率1
+cast(case   --cast里面嵌套了case ..end (作为一个sql表达式)                              
+	when d11.DescFlexField_PrivateDescSeg4='' 
+		then 0.00     
+	else
+		d11.DescFlexField_PrivateDescSeg4 
+	end as decimal(24,9)) as 损耗率1
 			  
         
         
