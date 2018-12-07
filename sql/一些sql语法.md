@@ -1,7 +1,6 @@
-                                             --表注释
-case				--case 
+case                            --case 
 	when F.CODE is null 
-		then  d.code	--when .. then                                     
+		then  d.code    --when .. then                                     
 	else			--else 
 		f.code
 	end as 子件料号  	     --end
