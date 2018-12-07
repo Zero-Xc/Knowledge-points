@@ -16,9 +16,9 @@
 													
                           
                           
-		cast(case                                                   
+		cast(case   --cast里面嵌套了case ..end (作为一个sql表达式)                              
 			  when d11.DescFlexField_PrivateDescSeg4='' 
-			   then 0.00                                     --cast里面嵌套了case ..end (作为一个sql表达式)
+			   then 0.00                                     
 			  else  
 			   d11.DescFlexField_PrivateDescSeg4 
 			  end as decimal(24,9)) as 损耗率1
@@ -27,7 +27,9 @@
         
         
         CONVERT(data_type(length),data_to_be_converted,style)             
-	data_type(length) 规定目标数据类型（带有可选的长度）,data_to_be_converted 含有需要转换的值,style 规定日期/时间的输出格式(有表)。
+	data_type(length) 规定目标数据类型（带有可选的长度）,
+	data_to_be_converted 含有需要转换的值,
+	style 规定日期/时间的输出格式(有表)。
 		
-		                                          --CONVERT() 函数可以用不同的格式显示日期/时间数据。
+	CONVERT() 函数可以用不同的格式显示日期/时间数据。
         CONVERT(VARCHAR(11), GETDATE(), 23)             --GETDATE() 函数从 SQL Server 返回当前的时间和日期。
