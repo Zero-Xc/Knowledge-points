@@ -15,9 +15,9 @@ decimal(24,9)
 --精度与小数位数分别为24与9。精度是总的数字位数，包括小数点左边和右边位数的总和。                   
 --这表示本例能够支持的最大的整数值是999999999999999 （15位），而最小的小数值是0.000000001（9位）
 													
-                          
-                          
-cast(case   --cast里面嵌套了case ..end (作为一个sql表达式)                              
+
+--cast里面嵌套了case ..end (作为一个sql表达式)  
+cast(case                               
 	when d11.DescFlexField_PrivateDescSeg4='' 
 		then 0.00     
 	else
