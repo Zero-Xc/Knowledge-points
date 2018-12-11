@@ -37,8 +37,8 @@ UNION 操作符用于合并两个或多个 SELECT 语句的结果集。
 请注意，UNION 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同。
 默认地，UNION 操作符选取不同的值。如果允许重复的值，请使用 UNION ALL。
 
-charindex ( expressionToFind , expressionToSearch  ,start_location)
-expressionToFind ：目标字符串，就是想要找到的字符串，最大长度为8000 。
-expressionToSearch ：用于被查找的字符串。
-start_location：开始查找的位置，为空时默认从第一位开始查找。
-例子：select charindex('test','this Test is Test',7)    结果：14
+charindex ( expressionToFind , expressionToSearch  ,start_location)  
+expressionToFind ：目标字符串，就是想要找到的字符串，最大长度为8000。  
+expressionToSearch ：用于被查找的字符串。  
+start_location：开始查找的位置，为空时默认从第一位开始查找。  
+例子：select charindex('test','this Test is Test',7)    结果：14  
