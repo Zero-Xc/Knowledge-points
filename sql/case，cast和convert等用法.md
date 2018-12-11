@@ -41,4 +41,4 @@ charindex ( expressionToFind , expressionToSearch  ,start_location)
 expressionToFind ：目标字符串，就是想要找到的字符串，最大长度为8000。  
 expressionToSearch ：用于被查找的字符串。  
 start_location：开始查找的位置，为空时默认从第一位开始查找。  
-例子：select charindex('test','this Test is Test',7)    结果：14  
+例子：select charindex('test','this Test is Test',7)      结果：14  
