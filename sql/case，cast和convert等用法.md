@@ -25,16 +25,16 @@ cast(case
 	end as decimal(24,9)) as 损耗率1
 			  
               
-CONVERT(data_type(length),data_to_be_converted,style)               
+convert(data_type(length),data_to_be_converted,style)               
 data_type(length) 规定目标数据类型（带有可选的长度）,  
 data_to_be_converted 含有需要转换的值,  
 style 规定日期/时间的输出格式(有表)。  
 	
-CONVERT() 函数可以用不同的格式显示日期/时间数据。  
-CONVERT(VARCHAR(11), GETDATE(), 23)             --GETDATE() 函数从 SQL Server 返回当前的时间和日期。
+convert() 函数可以用不同的格式显示日期/时间数据。  
+convert(varchar(11), getdate(), 23)             --getdate() 函数从 SQL Server 返回当前的时间和日期。
 
-UNION 操作符用于合并两个或多个 SELECT 语句的结果集。  
-请注意，UNION 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同。  
+union 操作符用于合并两个或多个 SELECT 语句的结果集。  
+请注意，union 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同。  
 默认地，UNION 操作符选取不同的值。如果允许重复的值，请使用 UNION ALL。  
 
 charindex ( expressionToFind , expressionToSearch  ,start_location)  
