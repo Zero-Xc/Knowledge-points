@@ -10,7 +10,7 @@
 
 　　　　3.数据访问层(Dao)置于com.springboot.repository  
 
-　　　　4.数据服务层(Service)置于com,springboot.service,数据服务的实现接口(serviceImpl)至于com.springboot.service.impl  
+　　　　4.数据服务层(Service)置于com,springboot.service,数据服务的实现类(serviceImpl)置于com.springboot.service.impl  
 
 　　　　5.前端控制器(Controller)置于com.springboot.controller  
 
