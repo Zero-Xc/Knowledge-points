@@ -12,7 +12,7 @@
 
 　　　　4.数据服务层(Service)置于com,springboot.service,数据服务的实现类(serviceImpl)置于com.springboot.service.impl  
 
-　　　　5.前端控制器(Controller)置于com.springboot.controller  
+　　　　5.前端控制器(Controller)置于com.springboot.controller或者com.springboot.web
 
 　　　　6.工具类(utils)置于com.springboot.utils  
 
