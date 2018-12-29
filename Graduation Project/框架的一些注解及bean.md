@@ -18,3 +18,5 @@ nullable属性表示该字段是否可以为null值，默认为true。
 - @PathVariable 可以将@RequestMapping注解中用{}表示的变量部分的值截取下来（即去除反斜杠）
 - @Autowired 该注解可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。按照类型（byType）装配依赖对象
 - @Resource 可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作,默认按照ByName自动注入,找不到name才按类型装配
+### domain.result包下：
+- ExceptionMsg 类，全名Exception Message（异常消息），用枚举类定义一个状态码用作异常处理。
