@@ -14,6 +14,8 @@ nullable属性表示该字段是否可以为null值，默认为true。
 - @RestController 注解相当于@ResponseBody ＋ @Controller合在一起的作用。  
 如果只是使用@RestController注解Controller，则Controller中的方法无法返回jsp页面，  
 或者html，配置的视图解析器InternalResourceViewResolver不起作用，返回的内容就是Return 里的内容。
+- @GetMapping是一个组合注解，是@RequestMapping(method = RequestMethod.GET)的缩写。该注解将HTTP Get 映射到 特定的处理方法上。
+同理@PostMapping、@PutMapping、@DeleteMapping、@PatchMapping类推
 - @RequestMapping 在Spring MVC 中使用 这个注解来映射请求，也就是通过它来指定控制器可以处理哪些URL请求
 - @RequestParam主要用于将请求参数区域的数据映射到控制层方法的参数上，主要参数：value、required、defaultValue
 - @PathVariable 可以将@RequestMapping注解中用{}表示的变量部分的值截取下来（即去除反斜杠）
