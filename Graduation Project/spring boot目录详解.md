@@ -26,9 +26,7 @@
 
 　　根目录:src/main/resources  
 
-　　　　1.配置文件(.properties/.json等)置于config文件夹下  
-         两种配置文件选其一使用application.properties和application.yml：一种基于Unicode容易阅读，容易和脚本语言交互的，
-         用来表达资料序列的编程语言。
+　　　　1.配置文件(.properties/.json等)置于config文件夹下,两种配置文件选其一使用application.properties和application.yml：一种基于Unicode容易阅读，容易和脚本语言交互的,用来表达资料序列的编程语言。
 
 　　　　2.国际化(i18n))置于i18n文件夹下  
 
