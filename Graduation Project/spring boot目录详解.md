@@ -6,9 +6,9 @@
 
 　　　　1.工程启动类(ApplicationServer.java)置于com.springboot.build包下  
 
-　　　　2.实体类(domain)置于com.springboot.domain  
+　　　　2.实体类(domain)置于com.springboot.domain，等价于entity
 
-　　　　3.数据访问层(Dao)置于com.springboot.repository  
+　　　　3.数据访问层(Dao)置于com.springboot.repository
 
 　　　　4.数据服务层(Service)置于com,springboot.service,数据服务的实现类(serviceImpl)置于com.springboot.service.impl  
 
