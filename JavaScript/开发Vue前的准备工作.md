@@ -39,3 +39,13 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
   6.若cnpm install 导入依赖出错，可以键入npm cache clean --force ，命令清除缓存，再开始cnpm install  
   
   某次npm更新之后关于npm的所有命令都失效了，使用npm i -g gulp-cli 即可！
+  
+  # 新建vue项目
+  ```
+  vue init webpack  ”项目名称“
+  ```
+  yes
+  no
+  no
+  no
+  npm
