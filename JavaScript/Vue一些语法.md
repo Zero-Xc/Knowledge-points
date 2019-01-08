@@ -1,4 +1,4 @@
-# 结构目录
+## 结构目录
 - index.html 单页面文件，spa所指的单页面
 - main.js 程序入口文件，加载组件，挂载到单页面上
 - App.vue 主组件，带vue后缀就是组件
@@ -15,3 +15,14 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
   可以在不离开父窗体的情况下有一些互动。子窗体可提供信息、交互等。
 - export default 用于对外输出本模块（一个文件可以理解为一个模块）变量的默认接口
 - mounted 对于前端来说，钩子函数就是指再所有函数执行前，我先执行了的函数，即 钩住 我感兴趣的函数，只要它执行，我就先执行。
+
+## 关于导入vue组件快速开发:
+```
+首先安装element-ui依赖包
+cd进入项目目录
+  npm i element-ui -S
+在main.js中导入
+  import ElementUI from 'element-ui'
+  import 'element-ui/lib/theme-chalk/index.css'
+  Vue.use(ElementUI)
+```
