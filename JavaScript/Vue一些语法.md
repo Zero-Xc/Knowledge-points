@@ -14,7 +14,7 @@
 - router  index.js 路由组件，其中含嵌套路由
 - render: h => h(App),vue2写法，渲染一个视图，然后提供给el挂载，表示 Vue 实例选项对象的
 render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App) 的函数调用结果
-- template 模板方法
+- template 模板方法，只能有一个根元素，可写一个总的<div>
 - Submenu 一种树形导航结构
 - Breadcrumb 面包屑导航
 - modal 模态框是覆盖在父窗体上的子窗体。通常，目的是显示来自一个单独的源的内容，
