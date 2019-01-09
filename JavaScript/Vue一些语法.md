@@ -2,13 +2,15 @@
 - index.html 单页面文件，spa所指的单页面
 - main.js 程序入口文件，加载组件，挂载到单页面上
 - App.vue 主组件，带vue后缀就是组件
-- view 页面组件
+- view 页面组件,可在script中通过import导入一些公共组件并重命名，通过组件名在页面中调用
 - component 一些公共组件比如head或foot；效果点击组件
 - util 公共方法组件
 - store 状态管理及api
 ```
 <router-view/>   <!--显示路由位置，嵌套路由，关联index.js-->
 ```
+## 一些语法
+- /根目录  ./当前目录 ../父级目录
 - router  index.js 路由组件，其中含嵌套路由
 - render: h => h(App),vue2写法，渲染一个视图，然后提供给el挂载，表示 Vue 实例选项对象的
 render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App) 的函数调用结果
@@ -19,6 +21,12 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
   可以在不离开父窗体的情况下有一些互动。子窗体可提供信息、交互等。
 - export default 用于对外输出本模块（一个文件可以理解为一个模块）变量的默认接口
 - mounted 对于前端来说，钩子函数就是指再所有函数执行前，我先执行了的函数，即 钩住 我感兴趣的函数，只要它执行，我就先执行。
+- href= 'javascript：void(0)' 这个的含义是，让超链接去执行一个js函数,而不是去跳转到一个地址
+- activated()：在vue对象存活的情况下，进入当前存在activated()函数的页面时，一进入页面就触发；可用于初始化页面数据等
+
+## 项目中一些问题
+- 导入组件不仅需要在script里import，还需在default export里的component里输出，格式为aBB,页面中调用```<a-BB>```
+- div不要使用float，可使用 position: absolute; right: 20px; 等绝对位置。
 
 ## 关于导入vue组件快速开发:
 ```
