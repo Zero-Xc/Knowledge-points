@@ -2,6 +2,10 @@
 - index.html 单页面文件，spa所指的单页面
 - main.js 程序入口文件，加载组件，挂载到单页面上
 - App.vue 主组件，带vue后缀就是组件
+- view 页面组件
+- component 一些公共组件比如head或foot；效果点击组件
+- util 公共方法组件
+- store 状态管理及api
 ```
 <router-view/>   <!--显示路由位置，嵌套路由，关联index.js-->
 ```
