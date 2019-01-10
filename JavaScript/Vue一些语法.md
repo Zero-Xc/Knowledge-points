@@ -26,7 +26,7 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
 
 ## 项目中一些问题
 - 导入组件不仅需要在script里import，还需在default export里的component里输出，格式为aBB,页面中调用```<a-BB>```
-- div不要使用float，可使用 position: absolute; right: 20px; 等绝对位置。
+- div尽量不要使用绝对位置！调整窗口就会错位。
 
 ## 关于导入vue组件快速开发:
 ```
