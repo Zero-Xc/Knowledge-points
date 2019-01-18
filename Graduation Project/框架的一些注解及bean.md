@@ -11,6 +11,7 @@ nullable属性表示该字段是否可以为null值，默认为true。
 方法将都具有该类型的事务属性，同时，我们也可以在方法级别使用该标注来覆盖类级别的定义。  
 - @query()查询  
 ### controller包下：
+- @ComponentScan(basePackages={"com.xx.xx"}) 该注解表示需要扫描的组件，必须。
 - @RestController 注解相当于@ResponseBody ＋ @Controller合在一起的作用。  
 如果只是使用@RestController注解Controller，则Controller中的方法无法返回jsp页面，  
 或者html，配置的视图解析器InternalResourceViewResolver不起作用，返回的内容就是Return 里的内容。
