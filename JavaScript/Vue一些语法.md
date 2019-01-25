@@ -25,6 +25,27 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
 - activated()：在vue对象存活的情况下，进入当前存在activated()函数的页面时，一进入页面就触发；可用于初始化页面数据等
 - ‘==’与‘===’区别：不同类型间比较，==比较“转化成同一类型后的值”看“值”是否相等，===如果类型不同，其结果就是不等，若
   同类型比较，则两者结果相同
+  
+## 代码解释
+```
+<script>
+  var app=new Vue({  构造函数，根实例
+    el：'#app'，      指定一个已存在的DOM元素，挂载Vue实例
+    data:{           data用来声明需要双向绑定的数据（建议是应用内会用到的所有数据）
+      message:''     文本插值{{ message }}会将双向绑定的数据实时显示
+    }，              {{ }}中可以使用javascript进行简单计算、三元运算，但不支持语句(var num='1')和流控制
+    created：function(){ el挂载前调用，只能初始化一些数据
+    },
+    mounted:function(){ el挂载后调用，一般是一些业务逻辑
+    },
+    beforeDestroy:function(){ 实例销毁之前调用，解绑一些监听事件
+    },
+    methods:{
+    this.message='111'   methods和钩子函数中的this都指向当前实例
+    }
+  })
+```
+
 ## 项目中一些问题
 - 导入组件不仅需要在script里import，还需在default export里的component里输出，格式为aBB,页面中调用```<a-BB>```
 - div尽量不要使用绝对位置！调整窗口就会错位，解决办法：使用自适应布局，和单位em来进行相对定位。
