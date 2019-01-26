@@ -34,6 +34,7 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
 - v-show，改变display属性
 - v-for，遍历数组或枚举一个对象
 - v-on:click，监听一个点击事件，简写 @click
+- v-model，用于在表单类上双向绑定数据
 
 ## 代码解释
 ```
