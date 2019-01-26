@@ -27,14 +27,15 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
   同类型比较，则两者结果相同
   
 ## 一些指令
-- v-bind，可动态的更新DOM元素，即通过method或computed或钩子函数
 - v-cloak，解决初始化慢导致页面闪动的问题，与display:none连用
 - v-once，表示组件只渲染一次
 - v-if、v-else、v-else-if，根据表达式渲染或销毁元素
 - v-show，改变display属性
 - v-for，遍历数组或枚举一个对象
 - v-on:click，监听一个点击事件，简写 @click
-- v-model，用于在表单类上双向绑定数据
+- v-model，用于在表单类上双向绑定数据，绑定一个静态字符串或者布尔值
+- v-bind，可动态的更新DOM元素，即通过method或computed或钩子函数，简写 ：
+- 
 
 ## 代码解释
 ```
