@@ -36,7 +36,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 在命令行中运行命令 npm install -g vue-cli ，然后等待安装完成。 
 
   5.打开cmd命令行，cd进Vue项目目录，键入cnpm install，自动配置依赖，再键入npm run dev,既能热部署项目  
-  6.若cnpm install 导入依赖出错，可以键入npm cache clean --force ，命令清除缓存，再开始cnpm install  
+  6.若cnpm install 导入依赖出错，可以键入npm cache clean --force 或者npm cache verify，命令清除缓存，再开始cnpm install  
   
   某次npm更新之后关于npm的所有命令都失效了，使用npm i -g gulp-cli 即可！
   
