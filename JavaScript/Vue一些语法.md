@@ -36,6 +36,7 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
 - v-model，用于在表单类上双向绑定数据，绑定一个静态字符串或者布尔值
 - v-bind，可动态的更新DOM元素，即通过method或computed或钩子函数，简写 ：
 - slot，子组件内备用内容，作用域是子组件，父组件模板中子组件内所有内容会替换子组件的slot内容
+- this.$router.push()，methods里的点击跳转事件
 
 ## 代码解释
 ```
@@ -70,4 +71,11 @@ cd进入项目目录
   import ElementUI from 'element-ui'
   import 'element-ui/lib/theme-chalk/index.css'
   Vue.use(ElementUI)
+  
+安装axios
+cd进入项目目录
+  npm install axios
+在main.js中导入
+  import axios from 'axios'
+  Vue.prototype.$http = axios
 ```
