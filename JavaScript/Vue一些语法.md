@@ -75,7 +75,32 @@ cd进入项目目录
 安装axios
 cd进入项目目录
   npm install axios
+  
 在main.js中导入
   import axios from 'axios'
   Vue.prototype.$http = axios
+
+在组件中使用methods中
+  goLogin:function(){
+            this.$http.get('/api/feign-consumer3')
+            .then(res=>{
+                //console.log(res)
+                alert(res)
+            }).catch(error=>{
+                console.log(error)
+            })
+        }
+
+axios跨域请求
+  在config.js中加入
+     proxyTable: {
+      '/api': {
+        target: 'http://localhost:9001',//设置你调用的接口域名和端口号 别忘了加http
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''//这里理解成用‘/api’代替target里面的地址，后面组件中我们掉接口时直接用api代替  
+                     //比如我要调用'http://40.00.100.100:3002 /user/add'，直接写‘/api/user/add’即可
+        }
+      }
+    },
 ```
