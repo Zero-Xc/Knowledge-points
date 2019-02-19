@@ -49,6 +49,8 @@ render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App)
     }，              {{ }}中可以使用javascript进行简单计算、三元运算，但不支持语句(var num='1')和流控制
     created：function(){ el挂载前调用，只能初始化一些数据
     },
+    activated():{      vue对象存活，一进入页面就触发，用于初始化数据
+    },
     mounted:function(){ el挂载后调用，一般是一些业务逻辑
     },
     beforeDestroy:function(){ 实例销毁之前调用，解绑一些监听事件
