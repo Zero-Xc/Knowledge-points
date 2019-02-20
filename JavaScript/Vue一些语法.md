@@ -88,7 +88,7 @@ cd进入项目目录
             this.$http.get('/api/feign-consumer3')
             .then(res=>{
                 //console.log(res)
-                alert(res)
+                alert(res.data)
             }).catch(error=>{
                 console.log(error)
             })
