@@ -121,6 +121,6 @@ axios跨域请求
 ```
   const service = axios.create({
     baseURL: '/api',   //跨域代理 
-    timeout: 5000 // 请求超时时间
+    timeout: 5000 // 请求超时时间 
 })
 ```
