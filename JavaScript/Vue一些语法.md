@@ -116,3 +116,11 @@ axios跨域请求
       }
     },
 ```
+## 抽象API 
+- 若需要将API抽象出来，需另外建一个api文件夹及相应的request.js
+```
+  const service = axios.create({
+    baseURL: '/api',   //跨域代理 
+    timeout: 5000 // 请求超时时间
+})
+```
