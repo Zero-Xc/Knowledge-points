@@ -23,7 +23,7 @@ export function login(name, psd) {
 ### 问题4：controller接受参数的注解
 - @RequestParam  接受URL中的参数，即获取get参数
 - @RequestBody   接受请求体中参数，即获取post参数
-- @PathVariable  动态参数，将形参绑定到@RequestMapping中URL的占位符,同时转到相应网址
+- @PathVariable  动态参数，将形参绑定到@RequestMapping中URL的占位符
 
 ### RESTful API
 ```
