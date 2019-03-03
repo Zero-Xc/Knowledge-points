@@ -13,6 +13,8 @@
 ```
 ## 一些语法
 - /根目录  ./当前目录 ../父级目录
+- this.$route.query.id,用来接受url携带的参数，写入方法里面
+- style="display:block;vertical-align:middle;" 用来调整对齐方式
 - export default 用于对外输出本模块（一个文件可以理解为一个模块）变量的默认接口
 - mounted 对于前端来说，钩子函数就是指再所有函数执行前，我先执行了的函数，即 钩住 我感兴趣的函数，只要它执行，我就先执行。
 - activated()：在vue对象存活的情况下，进入当前存在activated()函数的页面时，一进入页面就触发；可用于初始化页面数据等
