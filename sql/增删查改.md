@@ -1,0 +1,29 @@
+## SELECT
+```
+  @Select("SELECT sm.*"
+			+ " FROM admin_societyManage sm "
+			+"WHERE sm.name not in  "
+			+"(SELECT s.society  "
+			+ "FROM admin_society s LEFT JOIN admin_joinsociety js "
+			+"ON s.society=js.society_name "
+			+ "WHERE s.member=#{name} or js.applicant=#{name}) "
+			+ "limit #{id1},#{id2}")  //获取可申请社团列表
+```
+
+## INSERT
+```
+  @Insert("INSERT INTO admin_societyManage (name,type,leader) VALUES (#{name},#{type},#{leader})")
+```
+
+## UPDATE
+```
+  @Update("UPDATE admin_societymanage sm JOIN admin_society s "
+			+ "ON sm.name=s.society "
+			+ " SET sm.leader=#{leader} , s.position='社员' "    //set后必须以逗号连接，不可使用and
+			+ "WHERE sm.id=#{id}")
+```
+
+## DELECT
+```
+  @Delete("DELETE FROM admin_societyManage WHERE id=#{id}")
+```
